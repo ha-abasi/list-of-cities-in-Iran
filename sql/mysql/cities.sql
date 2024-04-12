@@ -1,9 +1,16 @@
+SET NAMES utf8;
+SET time_zone = '+00:00';
+SET foreign_key_checks = 0;
+SET sql_mode = 'NO_AUTO_VALUE_ON_ZERO';
+
+SET NAMES utf8mb4;
+
 CREATE TABLE cities(
    id          INTEGER  NOT NULL PRIMARY KEY 
   ,name        VARCHAR(17) NOT NULL
   ,slug        VARCHAR(26)
   ,province_id INTEGER  NOT NULL
-);
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 INSERT INTO cities(id,name,slug,province_id) VALUES (1,'اسکو','اسکو',1);
 INSERT INTO cities(id,name,slug,province_id) VALUES (2,'اهر','اهر',1);
 INSERT INTO cities(id,name,slug,province_id) VALUES (3,'ایلخچی','ایلخچی',1);
