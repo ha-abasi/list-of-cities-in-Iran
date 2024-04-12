@@ -1,9 +1,16 @@
+SET NAMES utf8;
+SET time_zone = '+00:00';
+SET foreign_key_checks = 0;
+SET sql_mode = 'NO_AUTO_VALUE_ON_ZERO';
+
+SET NAMES utf8mb4;
+
 CREATE TABLE IF NOT EXISTS provinces(
    id   INTEGER  NOT NULL PRIMARY KEY AUTO_INCREMENT
   ,name VARCHAR(19) NOT NULL
   ,slug VARCHAR(17) NOT NULL
   ,tel_prefix VARCHAR(3) NOT NULL
-);
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 INSERT INTO provinces(id,name,slug,tel_prefix) VALUES (1,'آذربایجان شرقی','آذربایجان-شرقی','041');
 INSERT INTO provinces(id,name,slug,tel_prefix) VALUES (2,'آذربایجان غربی','آذربایجان-غربی','044');
 INSERT INTO provinces(id,name,slug,tel_prefix) VALUES (3,'اردبیل','اردبیل','045');
